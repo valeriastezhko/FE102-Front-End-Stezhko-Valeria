@@ -26,24 +26,25 @@
     width: 100%;
 }
 
-.tab-active {
-    border: 1px solid #C6CBCD;
-    border-bottom: 1px solid transparent;
-    border-top-right-radius: 4px;
-    border-top-left-radius: 4px;
-    background-color: white;
-}
-
 .tabs-header__tab-text {
     font-size: 14px;
 }
 
 .tabs-header__tab {
     display: inline-block;
-    width: 201px;
+    width: 184px;
     text-align: center;
     padding: 10px 0;
     margin-bottom: -1px;
+}
+
+.tab-active {
+    width: 201px;
+    border: 1px solid #C6CBCD;
+    border-bottom: 1px solid transparent;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    background-color: white;
 }
 
 .tabs-description {
@@ -131,6 +132,7 @@ hr {
 
 .about-cards {
     text-align: center;
+    margin-bottom: 58px;
 }
 
 .card-item {
@@ -168,16 +170,15 @@ hr {
 }
 
 .pricing-header {
-    padding-top: 123px;
     text-align: center;
+    padding-top: 60px;
 }
 
 .pricing-header__title {
     height: 150px;
     text-transform: uppercase;
-    font-size: 24px;
     padding: 55px 0;
-    margin-bottom: 40px;
+    margin-bottom: 46px;
 }
 
 .pricing-header__title:after {
@@ -190,15 +191,19 @@ hr {
     margin-top: 52px;
 }
 
-.pricing-title {}
+.pricing-title {
+    font-weight: 400;
+    font-size: 36px;
+}
 
 .pricing-header__subtitle {
-    font-size: 18px;
-    line-height: 21px;
     margin-bottom: 79px;
 }
 
-.pricing-subtitle {}
+.pricing-subtitle {
+    font-size: 18px;
+    line-height: 21px;
+}
 
 .pricing-cards {
     display: flex;
@@ -211,7 +216,6 @@ hr {
 }
 
 .pricing-cards__item-list {
-
     text-align: center;
     font-size: 18px;
     line-height: 21px;
@@ -256,7 +260,6 @@ hr {
     font-weight: 700;
     text-transform: capitalize;
     padding-top: 14px;
-
 }
 
 .price {
@@ -270,5 +273,112 @@ hr {
 
 .active .pricing-cards__item-list {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
 
+.reviews-header {
+    padding-top: 60px;
+    text-align: center;
+    font-family: 'Raleway';
+    font-weight: 400;
+}
+
+.reviews-header__title {
+    height: 150px;
+    padding: 37px 0;
+    margin-bottom: 26px;
+}
+
+.reviews-header__title:after {
+    margin-top: 57px;
+    content: '';
+    display: block;
+    width: 170px;
+    height: 1px;
+    background: #EC7979;
+    margin: 0 auto;
+}
+
+.reviews-title {
+    font-weight: 400;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.reviews-header__subtitle {
+    margin-bottom: 80px;
+}
+
+.reviews__subtitle {
+    font-size: 18px;
+    line-height: 21px;
+    color: #86878B;
+}
+
+.reviews-content {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 64px;
+}
+
+.reviews-content__item {
+    position: relative;
+}
+
+.reviews-content__item-comment {
+    margin-bottom: 68px;
+}
+
+.reviews-content__item-comment::after {
+    content: '';
+    position: absolute;
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+    border-top: 20px solid #E2E2E2;
+    left: 20%;
+}
+
+.item-comment {
+    padding: 38px 20px 37px;
+    background-color: #E2E2E2;
+    border-radius: 10px;
+}
+
+.text-comment {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #86878B;
+}
+
+.reviews-content__item-author {
+    display: flex;
+    gap: 30px;
+}
+
+.author-description__name {
+    padding-top: 8px;
+    margin-bottom: 15px;
+}
+
+.description-name {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 24px;
+    color: #000000;
+}
+
+.author-description__position {
+    padding-top: 10px;
+}
+
+.description-position {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    align-items: center;
+    color: #000000;
 }
