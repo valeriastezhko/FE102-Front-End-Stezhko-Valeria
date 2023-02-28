@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Raleway:wght@100;300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.container {
+    width: 1170px;
+    font-family: 'Open Sans', 'Raleway';
+    margin: 0 auto;
+}
+
+.tabs {
+    width: 100%;
+    margin: 50px 0;
+}
+
+.tabs-header {
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 0;
+    width: 100%;
+}
+
+.tab-active {
+    border: 1px solid #C6CBCD;
+    border-bottom: 1px solid transparent;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    background-color: white;
+}
+
+.tabs-header__tab-text {
+    font-size: 14px;
+}
+
+.tabs-header__tab {
+    display: inline-block;
+    width: 201px;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: -1px;
+}
+
+.tabs-description {
+    width: 100%;
+    border: 1px solid #C6CBCD;
+    font-size: 0px;
+}
+
+.tabs-description__content {
+    height: 500px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 30px 54px 98px;
+}
+
+.content-title {
+    width: 570px;
+    height: 124px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 27px;
+    padding-top: 40px;
+}
+
+.contetn-text {
+    width: 570px;
+    height: 210px;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 27px;
+}
+
+.content-download {
+    width: 270px;
+    height: 58px;
+    background: #EC7979;
+    border: none;
+    color: #FFFFFF;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.tabs-description__image img {
+    width: 470px;
+    height: 500px;
+}
+
+.tabs-description__image {
+    display: inline-block;
+}
+
+.about {
+    text-align: center;
+}
+
+.about-header {
+    font-family: 'Raleway';
+    font-weight: 400;
+    text-align: center;
+}
+
+.about-header__title {
+    font-size: 36px;
+    margin: 54px 0;
+    text-transform: uppercase;
+    padding-top: 50px;
+}
+
+.about-header__subtitle {
+    font-size: 18px;
+    color: #86878B;
+    margin-top: 38px;
+    margin-bottom: 72px;
+}
+
+hr {
+    width: 170px;
+    height: 0px;
+    margin: 0 auto;
+    border: 1px solid #EC7979;
+}
+
+.about-cards {
+    text-align: center;
+}
+
+.card-item {
+    width: 370px;
+    display: inline-block;
+    margin: 0 8px;
+    padding: 0 10px;
+}
+
+.card-item__icon {
+    width: 170px;
+    height: 170px;
+    margin: 0 auto;
+}
+
+.card-item__title {
+    height: 100px;
+    padding-top: 35px;
+    font-family: "Open sans";
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.card-item__text {
+    margin-top: 10px;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.pricing {
+    font-family: 'Raleway';
+    background-color: #F5F5F5;
+}
+
+.pricing-header {
+    padding-top: 123px;
+    text-align: center;
+}
+
+.pricing-header__title {
+    height: 150px;
+    text-transform: uppercase;
+    font-size: 24px;
+    padding: 55px 0;
+    margin-bottom: 40px;
+}
+
+.pricing-header__title:after {
+    content: '';
+    display: block;
+    width: 170px;
+    height: 1px;
+    background: #EC7979;
+    margin: 0 auto;
+    margin-top: 52px;
+}
+
+.pricing-title {}
+
+.pricing-header__subtitle {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 79px;
+}
+
+.pricing-subtitle {}
+
+.pricing-cards {
+    display: flex;
+    gap: 30px;
+}
+
+.pricing-cards__item {
+    width: 370px;
+    margin-bottom: 50px;
+}
+
+.pricing-cards__item-list {
+
+    text-align: center;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #86878B;
+}
+
+.item-list__price {
+    border: 1px solid #F5F5F5;
+}
+
+.item-list__price:nth-child(-n+3) {
+    background-color: #333333;
+    color: #FFFFFF;
+}
+
+.item-list__price:nth-child(n+3) {
+    padding: 14px 0 14px 0;
+}
+
+.item-list__price:nth-child(n+4) {
+    background-color: #FFFFFF;
+    color: #86878B;
+}
+
+.active:last-child {
+    padding-bottom: 0;
+}
+
+.active {
+    margin-top: -20px;
+}
+
+.basic,
+.optima,
+.pro {
+    height: 60px;
+    font-family: 'Open Sans';
+    font-size: 24px;
+    line-height: 33px;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding-top: 14px;
+
+}
+
+.price {
+    height: 100px;
+    padding: 30px 0;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: capitalize;
+}
+
+.active .pricing-cards__item-list {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+}
