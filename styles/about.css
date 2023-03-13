@@ -1,0 +1,78 @@
+.header {
+  /* padding-top: 50px; */
+  font-family: "Raleway";
+  text-align: center;
+}
+
+.header-title {
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 400;
+}
+
+.header-title:after {
+  margin: 52px auto 0 auto;
+  content: "";
+  display: block;
+  width: 170px;
+  height: 1px;
+  background: #ec7979;
+}
+
+.header-subtitle {
+  margin-top: 40px;
+}
+
+.header-subtitle__text {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #86878b;
+}
+
+.about {
+  text-align: center;
+  padding-top: 55px;
+  padding-bottom: 58px;
+}
+
+.about-cards {
+  display: flex;
+  gap: 30px;
+  margin-top: 70px;
+}
+
+.card-item {
+  width: 370px;
+}
+
+.card-item__icon {
+  width: 170px;
+  height: 170px;
+  margin: 0 auto 25px;
+}
+
+.cart-item__content-title {
+  margin-bottom: 30px;
+}
+
+.content-title__title {
+  font-family: "Open sans";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  padding: 10px 0;
+}
+
+.cart-item__content-text {
+  margin-top: 10px;
+}
+
+.content-text__text {
+  padding: 0 3px;
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}

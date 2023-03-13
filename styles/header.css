@@ -1,0 +1,63 @@
+.main-header {
+  background-color: #000000;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.header-container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.main-header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.main-header__menu-logo {
+  display: flex;
+  margin: 0 15px; /*безопасный мардин (адаптив)*/
+  /* gap: 3px; */
+  /* align-items: center; */
+  /* padding: 2px 0 0 115px; */
+}
+
+.menu-logo__icon-ax {
+  height: 31px;
+  width: 52px;
+}
+
+.menu-logo__icon-it {
+  height: 31px;
+  width: 32px;
+}
+
+.main-header__menu-navigation {
+  margin: 0 15px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.menu-navigation__main-list {
+  display: flex;
+  width: 570px;
+  justify-content: space-between;
+  /* padding-right: 170px; */
+}
+
+.navigation-list__link {
+  /* padding: 28px 31px; */
+}
+
+.navigation-list__link a {
+  color: #ffffff;
+}

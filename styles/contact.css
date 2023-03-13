@@ -1,0 +1,78 @@
+.contact {
+  padding-top: 104px;
+  padding-bottom: 52px;
+}
+
+.contact-form {
+  margin-top: 89px;
+}
+
+.contact-form__request {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.form-request__info {
+  width: 50%;
+}
+.form-request__message {
+  width: 50%;
+}
+
+.contact_input-label {
+  margin-bottom: 50px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #bdbdbd;
+}
+
+.contact-form-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #bdbdbd;
+}
+
+.form-name__message {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #bdbdbd;
+}
+
+.form-textarea {
+  width: 569px;
+  height: 194px;
+  resize: none;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #bdbdbd;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.contact-form__submit {
+  text-align: center;
+}
+
+.contact-form-button {
+  padding: 16px 121px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+  border: none;
+  background-color: #ec7979;
+  cursor: pointer;
+}
+
+.contact-form-button:hover {
+  background: #c06161;
+}

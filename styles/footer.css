@@ -1,0 +1,64 @@
+.main-footer {
+  background-color: #000000;
+  padding-bottom: 27px;
+  padding-top: 35px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content__icons {
+  display: flex;
+  gap: 33px;
+  margin-bottom: 28px;
+}
+
+.footer-icon a:hover {
+  transform: scale(1.5);
+}
+
+.footer-link__icon {
+  display: block;
+  height: 53.2px;
+  width: 53.2px;
+  transition: 0.3s;
+}
+
+.footer-text__text {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.icon-facebook {
+  background-image: url(../assets/image/footer/facebook_icon.svg);
+}
+
+.icon-twitter {
+  background-image: url(../assets/image/footer/twitter_icon.svg);
+}
+
+.icon-linkedin {
+  background-image: url(../assets/image/footer/linkedin_icon.svg);
+}
+
+.icon-pinterest {
+  background-image: url(../assets/image/footer/pinterest_icon.svg);
+}
+
+.icon-instagram {
+  background-image: url(../assets/image/footer/instagram_icon.svg);
+}
+
+.icon-github {
+  background-image: url(../assets/image/footer/github_icon.svg);
+}
+
+.icon-rss {
+  background-image: url(../assets/image/footer/rss_icon.svg);
+}
