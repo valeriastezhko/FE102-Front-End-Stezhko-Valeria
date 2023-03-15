@@ -52,7 +52,7 @@
 }
 
 .description__content-text {
-  width: 570px;
+  max-width: 570px;
   margin-bottom: 26px;
 }
 
@@ -80,4 +80,48 @@
 
 .content-image {
   height: 500px;
+}
+
+@media (max-width: 550px) {
+  .tabs {
+    padding-top: 42px;
+  }
+
+  .tabs-description {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .tabs-description__content {
+    padding: 0 10px;
+  }
+
+  .description__content-title {
+    font-size: 18px;
+    line-height: 25px;
+    padding: 30px 15px 0;
+    margin-bottom: 60px;
+  }
+
+  .description__content-text {
+    margin-bottom: 44px;
+  }
+
+  .contetn-text {
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  .description__content-button {
+    margin-bottom: 30px;
+  }
+
+  .content-download {
+    width: 242px;
+    padding: 12px 0;
+  }
+
+  .tabs-description__image {
+    display: none;
+  }
 }

@@ -19,7 +19,6 @@
   text-align: center;
   font-size: 18px;
   line-height: 21px;
-  text-align: center;
   text-transform: capitalize;
   color: #86878b;
 }
@@ -63,12 +62,58 @@
 
 .price {
   height: 100px;
-  padding: 32px 0;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .active .pricing-cards__item-list {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+@media (max-width: 550px) {
+  .pricing {
+    padding-top: 48px;
+    padding-bottom: 24px;
+  }
+
+  .pricing-cards {
+    flex-direction: column;
+    margin-top: 25px;
+    gap: 27px;
+  }
+
+  .pricing-cards__item {
+    width: 100%;
+  }
+
+  .pricing-cards__item-list {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .item-list__price:nth-child(n + 3) {
+    padding: 8px 0 14px 0;
+  }
+
+  .basic,
+  .optima,
+  .pro {
+    height: 47px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .price {
+    height: 78.5px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .active {
+    margin-top: 0;
+  }
 }

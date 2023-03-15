@@ -1,5 +1,4 @@
 .header {
-  /* padding-top: 50px; */
   font-family: "Raleway";
   text-align: center;
 }
@@ -44,7 +43,7 @@
 }
 
 .card-item {
-  width: 370px;
+  max-width: 370px;
 }
 
 .card-item__icon {
@@ -75,4 +74,47 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+}
+
+@media (max-width: 550px) {
+  .about {
+    padding-top: 2px;
+  }
+  .header-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .header-title:after {
+    width: 134px;
+    margin: 42px auto 0 auto;
+  }
+  .header-subtitle {
+    margin-top: 27px;
+  }
+  .header-subtitle__text {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .about-cards {
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 0px;
+  }
+  .card-item {
+    margin: 0 auto;
+  }
+  .card-item__icon {
+    width: 147px;
+    height: 147px;
+  }
+  .content-title__title {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .cart-item__content-text {
+  }
+  .content-text__text {
+    font-size: 14px;
+    line-height: 16px;
+  }
 }

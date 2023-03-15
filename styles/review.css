@@ -2,6 +2,7 @@
   padding-top: 104px;
   padding-bottom: 62px;
 }
+
 .reviews-content {
   display: flex;
   gap: 30px;
@@ -10,6 +11,10 @@
 
 .reviews-content__item {
   position: relative;
+}
+
+.reviews-dots {
+  display: none;
 }
 
 .reviews-content__item-comment {
@@ -58,4 +63,75 @@
   line-height: 21px;
   align-items: center;
   color: #000000;
+}
+
+@media (max-width: 550px) {
+  .reviews {
+    padding-top: 22px;
+    padding-bottom: 33px;
+  }
+
+  .reviews-content {
+    flex-direction: column;
+    margin-top: 22px;
+  }
+
+  .reviews-dots {
+    margin: 0 auto;
+    display: block;
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .dots-btn {
+    width: 9.5px;
+    height: 9.5px;
+    border-radius: 50%;
+    background-color: #86878b;
+    border: 1px solid #86878b;
+    cursor: pointer;
+  }
+
+  .dots-btn:nth-child(odd) {
+    background-color: transparent;
+  }
+
+  .reviews-content__item:nth-child(odd) {
+    display: none;
+  }
+
+  .reviews-content__item-comment {
+    margin-bottom: 65px;
+  }
+
+  .text-comment {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 50px 18px;
+  }
+
+  .reviews-content__item-comment::after {
+    left: 16%;
+  }
+
+  .reviews-content__item-author {
+    gap: 23px;
+  }
+
+  .item-author-photo img {
+    width: 57px;
+    height: 57px;
+  }
+
+  .author-description__name {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .description-position {
+    font-size: 13px;
+    line-height: 15px;
+  }
 }

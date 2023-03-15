@@ -31,7 +31,6 @@
 .banner-content__description-logo {
   display: flex;
   gap: 5px;
-  /* padding-top: 23px; */
   margin-bottom: 72px;
 }
 
@@ -44,7 +43,7 @@
 }
 
 .banner-content__description-text {
-  width: 670px;
+  max-width: 670px;
   font-family: "Raleway";
 }
 
@@ -54,8 +53,7 @@
   width: 170px;
   height: 1px;
   background-color: #ffffff;
-  margin-bottom: 41px;
-  margin-top: 52px;
+  margin: 52px 0 41px 0;
 }
 
 .banner-text__title-title {
@@ -66,7 +64,7 @@
 }
 
 .banner-text__subtitle {
-  width: 270px;
+  max-width: 270px;
   margin-bottom: 42px;
 }
 
@@ -94,22 +92,13 @@
 }
 
 .form {
-  width: 470px;
-  /* display: flex;
-  font-family: "Open Sans";
-  flex-direction: column;
-  justify-content: space-between; */
-  /* gap: 47px; */
+  max-width: 470px;
   background-color: #ffffff;
   border-radius: 10px;
-  /* text-align: center; */
 }
 
 .form-up {
   padding: 30px 50px 75px;
-}
-
-.form-down {
 }
 
 .form-title {
@@ -120,6 +109,7 @@
   text-transform: uppercase;
   color: #333333;
 }
+
 .form_input-label {
   margin-top: 47px;
   font-family: "Open Sans";
@@ -161,4 +151,69 @@ input {
   font-family: "Open Sans";
   font-style: normal;
   font-size: 12px;
+}
+
+@media (max-width: 550px) {
+  .banner {
+    background-repeat: no-repeat;
+    padding: 84px 0 50px;
+    background-position-x: center;
+    background-position-y: 80%;
+  }
+
+  .banner-content {
+    flex-direction: column;
+  }
+
+  .banner-content__description-logo {
+    display: none;
+  }
+
+  .banner-content__description-text {
+    text-align: center;
+  }
+
+  .banner-text__title-title {
+    margin-top: 0;
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .banner-text__title-title::after {
+    width: 134px;
+    margin: 43px auto;
+  }
+
+  .banner-text__subtitle {
+    max-width: 100%;
+  }
+
+  .banner-text__subtitle-subtitle {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .banner-content__description-button {
+    margin-bottom: 54px;
+    text-align: center;
+  }
+
+  .banner-content__description-button__button {
+    padding: 11px 98px;
+  }
+
+  .form-up {
+    padding: 35px 33px 52px 25px;
+  }
+
+  .form-title {
+    font-size: 14px;
+    line-height: 19px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .form_input-label {
+    margin-top: 33px;
+  }
 }
